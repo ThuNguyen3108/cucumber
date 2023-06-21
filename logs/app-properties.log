@@ -1,0 +1,29 @@
+[INFO ] 14-06-2023 18:00:18 [main] Log - Test Log Cucumber
+[INFO ] 15-06-2023 10:03:18 [main] Log - Test Log Cucumber
+[INFO ] 15-06-2023 13:43:17 [main] createSlide_page - Login Successful
+[INFO ] 15-06-2023 13:43:17 [main] createSlide_page - Wait For Loading Page Successful
+[INFO ] 15-06-2023 13:43:17 [main] createSlide_page - Click button create Slide Successful
+[INFO ] 15-06-2023 13:43:17 [main] createSlide_page - Search Slide Successful
+[INFO ] 15-06-2023 13:43:18 [main] createSlide_page - Select this template Successful
+[INFO ] 15-06-2023 13:43:18 [main] createSlide_page - Enter title Slide Successful
+[INFO ] 15-06-2023 13:43:18 [main] createSlide_page - Click button Create Slide Successful
+[INFO ] 15-06-2023 13:43:27 [main] createSlide_page - Click button of successful item
+[INFO ] 15-06-2023 13:43:27 [main] createSlide_page - Drag image of successful item
+[INFO ] 15-06-2023 13:43:27 [main] createSlide_page - Add image of successful item
+[INFO ] 15-06-2023 13:43:27 [main] createSlide_page - Update Item Successful
+[INFO ] 15-06-2023 13:43:27 [main] createSlide_page - Add title of successful item
+[INFO ] 15-06-2023 13:43:28 [main] createSlide_page - Add summary of successful item 
+[INFO ] 15-06-2023 13:43:39 [main] createSlide_page - Click button of successful item
+[INFO ] 15-06-2023 13:43:39 [main] createSlide_page - Drag image of successful item
+[INFO ] 15-06-2023 13:43:39 [main] createSlide_page - Add image of successful item
+[INFO ] 15-06-2023 13:43:39 [main] createSlide_page - Update Item Successful
+[INFO ] 15-06-2023 13:43:39 [main] createSlide_page - Add title of successful item
+[INFO ] 15-06-2023 13:43:39 [main] createSlide_page - Add summary of successful item 
+[INFO ] 15-06-2023 13:43:46 [main] createSlide_page - Title item1 is : Mục test 1
+[INFO ] 15-06-2023 13:43:46 [main] createSlide_page - Title item2 is : Mục test 2
+[INFO ] 15-06-2023 13:43:50 [main] createSlide_page - Title preview item1 is : Mục test 2
+[INFO ] 15-06-2023 13:43:50 [main] createSlide_page - Title preview item2 is : Mục test 1
+[INFO ] 15-06-2023 13:43:50 [main] createSlide_page - The two items are the same
+[INFO ] 15-06-2023 13:43:50 [main] createSlide_page - The two items are the same
+[INFO ] 15-06-2023 13:47:58 [main] createSlide_page - Login Successful
+[INFO ] 15-06-2023 13:47:58 [main] createSlide_page - Wait For Loading Page Successful
