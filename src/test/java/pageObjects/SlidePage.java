@@ -5,7 +5,6 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 
 public class SlidePage {
@@ -78,12 +77,15 @@ public class SlidePage {
     @FindBy(xpath = "//iframe[@id='PreviewIframe']")
     public WebElement previewIframe;
 
-    public SlidePage(WebDriver driver) {
-        this.driver = driver;
-        loginPage = new LoginPage(driver);
-        waitForLoadingPage = new WaitForLoadingPage(driver);
-        PageFactory.initElements(driver,this);
+    public SlidePage() {
     }
+
+//    public SlidePage(WebDriver driver) {
+//        this.driver = driver;
+//        loginPage = new LoginPage(driver);
+//        waitForLoadingPage = new WaitForLoadingPage(driver);
+//        PageFactory.initElements(driver,this);
+//    }
 
 
     public void button_CreatSlide() throws InterruptedException {

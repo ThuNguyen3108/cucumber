@@ -13,10 +13,10 @@ public class WaitForLoadingPage {
     public By iconLoad = By.xpath("//div[@class='vibeimLoadingIndicator']");
     public By verify = By.xpath("//button[contains(text(),'Create New Slide')]");
 
-    public WaitForLoadingPage(WebDriver driver) {
-        this.driver = driver;
-        loginPage = new LoginPage(driver);
-    }
+//    public WaitForLoadingPage(WebDriver driver) {
+//        this.driver = driver;
+//        loginPage = new LoginPage(driver);
+//    }
 
     public void waitForPageToLoad() {
         loginPage.login("anh.nguyen.quoc@tpssoft.com", "anh@Tps123");

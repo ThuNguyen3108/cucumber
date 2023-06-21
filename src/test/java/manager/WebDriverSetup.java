@@ -12,15 +12,20 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class WebDriverSetup {
-    WebDriver driver;
+    static WebDriver driver;
     Properties prop = new Properties();
     InputStream inputStream = null;
+
+
+
+//    public static WebDriver getDriver() {
+//    }
     //đọc các dữ liệu khác nhau từ nguồn ầu vào
 
-    public WebDriver getDriver() throws IOException {
+    public static WebDriver getDriver() throws IOException {
         if(driver == null) {
             Log.info("Get webdriver setup");
-            driver = setDriver();
+            //driver = setDriver();
         };
         return driver;
     }

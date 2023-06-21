@@ -17,12 +17,12 @@ public class PageObjectManager {
     }
 
     public LoginPage getLoginPage(){
-        return (loginPage == null)? loginPage = new LoginPage(driver): loginPage;
+        return (loginPage == null)? loginPage = new LoginPage(): loginPage;
     }
 
 
     public SlidePage getSlidePage(){
-        return (slidePage == null)? slidePage = new SlidePage(driver): slidePage;
+        return (slidePage == null)? slidePage = new SlidePage(): slidePage;
     }
 
 }
