@@ -1,5 +1,4 @@
 package stepDefinitions;
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -18,42 +17,31 @@ public class LoginSteps {
     PageObjectManager pageObject;
     WebDriver driver;
 
-//    @BeforeClass
-//    void before_method() throws IOException {
-//        webDriverSetup = new WebDriverSetup();
-//        driver = webDriverSetup.getDriver();
-//        pageObject = new PageObjectManager(driver);
-//        loginPage = pageObject.getLoginPage();
-//    }
-
     @Given("user navigate to login page {string}")
-    public void userNavigateToLoginPage(String URL) throws IOException  {
+    public void userNavigateToLoginPage(String URL) throws IOException {
         webDriverSetup = new WebDriverSetup();
         driver = webDriverSetup.getDriver();
         pageObject = new PageObjectManager(driver);
         loginPage = pageObject.getLoginPage();
-
+        driver.get(URL);
     }
 
     @When("user enter email {string} and password {string}")
     public void userEnterEmailAndPassword(String email, String password) {
-        loginPage.Enter_username(email);
-        loginPage.Enter_password(password);
+        loginPage.enterUsername(email);
+        loginPage.enterPassword(password);
     }
 
     @And("click login button")
     public void clickLoginButton() {
-        loginPage.Click_button();
+        loginPage.clickButton();
     }
 
     @Then("user redirect to slide page {string}")
     public void userRedirectToSlidePage(String expectedURL) {
-        loginPage.verifyLoginSucess();
+        loginPage.verifyLoginSuccess();
         Assert.assertEquals(driver.getCurrentUrl(), expectedURL);
     }
 
-//    @AfterClass
-//    public void tearDown() {
-//        driver.quit();
-//    }
+
 }

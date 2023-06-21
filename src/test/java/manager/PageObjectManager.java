@@ -17,7 +17,7 @@ public class PageObjectManager {
     }
 
     public LoginPage getLoginPage(){
-        return (loginPage == null)? loginPage = new LoginPage(): loginPage;
+        return (loginPage == null)? loginPage = new LoginPage(driver): loginPage;
     }
 
 

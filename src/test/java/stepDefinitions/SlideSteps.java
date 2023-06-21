@@ -37,13 +37,13 @@ public class SlideSteps {
 
     @When("user enters email {string} and password {string}")
     public void userEntersEmailAndPassword(String email, String password) {
-        loginPage.Enter_username(email);
-        loginPage.Enter_password(password);
+        loginPage.enterUsername(email);
+        loginPage.enterPassword(password);
     }
 
     @And("user clicks login button")
     public void userClicksLoginButton() {
-        loginPage.Click_button();
+        loginPage.clickButton();
     }
 
     @Then("user is redirected to slide page {string}")
