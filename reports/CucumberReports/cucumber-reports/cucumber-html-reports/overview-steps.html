@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>CucumberVibe</td>
+        <td>1</td>
+      <td>21 Jun 2023, 09:52</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.createSlideIsVerified()</td>
+              <td>1</td>
+              <td class="duration" data-value="2085256900">2.085</td>
+              <td class="duration" data-value="2085256900">2.085</td>
+              <td class="duration" data-value="2085256900">2.085</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.itemIsVerified(int)</td>
+              <td>2</td>
+              <td class="duration" data-value="15145674100">15.145</td>
+              <td class="duration" data-value="15145674100">15.168</td>
+              <td class="duration" data-value="30291348200">30.291</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.userAddsImageOfItem()</td>
+              <td>2</td>
+              <td class="duration" data-value="211297000">0.211</td>
+              <td class="duration" data-value="211297000">0.246</td>
+              <td class="duration" data-value="422594000">0.422</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.userClicksAddItemButton()</td>
+              <td>2</td>
+              <td class="duration" data-value="16125750900">16.125</td>
+              <td class="duration" data-value="16125750900">16.127</td>
+              <td class="duration" data-value="32251501800">32.251</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.userClicksCreateSlideButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="14161673800">14.161</td>
+              <td class="duration" data-value="14161673800">14.161</td>
+              <td class="duration" data-value="14161673800">14.161</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.userClicksCreateSlideButtonTemplate()</td>
+              <td>1</td>
+              <td class="duration" data-value="77246400">0.077</td>
+              <td class="duration" data-value="77246400">0.077</td>
+              <td class="duration" data-value="77246400">0.077</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.userClicksLoginButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="19208136900">19.208</td>
+              <td class="duration" data-value="19208136900">19.208</td>
+              <td class="duration" data-value="19208136900">19.208</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.userClicksSaveButton()</td>
+              <td>2</td>
+              <td class="duration" data-value="102618650">0.102</td>
+              <td class="duration" data-value="102618650">0.114</td>
+              <td class="duration" data-value="205237300">0.205</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.userDragsImageOfItem()</td>
+              <td>2</td>
+              <td class="duration" data-value="99708950">0.099</td>
+              <td class="duration" data-value="99708950">0.101</td>
+              <td class="duration" data-value="199417900">0.199</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.userEntersEmailAndPassword(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="235155500">0.235</td>
+              <td class="duration" data-value="235155500">0.235</td>
+              <td class="duration" data-value="235155500">0.235</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.userEntersSummaryOfAddItem(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="154418050">0.154</td>
+              <td class="duration" data-value="154418050">0.173</td>
+              <td class="duration" data-value="308836100">0.308</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.userEntersTitleOfAddItem(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="151797450">0.151</td>
+              <td class="duration" data-value="151797450">0.170</td>
+              <td class="duration" data-value="303594900">0.303</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.userEntersTitleSlide(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="99483600">0.099</td>
+              <td class="duration" data-value="99483600">0.099</td>
+              <td class="duration" data-value="99483600">0.099</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.userEntersTitleTemplateSlide(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="128988800">0.128</td>
+              <td class="duration" data-value="128988800">0.128</td>
+              <td class="duration" data-value="128988800">0.128</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.userIsRedirectedToSlidePage(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="12123900">0.012</td>
+              <td class="duration" data-value="12123900">0.012</td>
+              <td class="duration" data-value="12123900">0.012</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.userNavigatesToLoginPage(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="7232912100">7.232</td>
+              <td class="duration" data-value="7232912100">7.232</td>
+              <td class="duration" data-value="7232912100">7.232</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.userSelectsThisTemplate()</td>
+              <td>1</td>
+              <td class="duration" data-value="984376300">0.984</td>
+              <td class="duration" data-value="984376300">0.984</td>
+              <td class="duration" data-value="984376300">0.984</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.SlideSteps.userUpdatesListItem()</td>
+              <td>2</td>
+              <td class="duration" data-value="156244400">0.156</td>
+              <td class="duration" data-value="156244400">0.162</td>
+              <td class="duration" data-value="312488800">0.312</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>18</td>
+            <td>26</td>
+            <td class="duration">4.173</td>
+            <td class="duration">32.251</td>
+            <td class="duration">1:48.520</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

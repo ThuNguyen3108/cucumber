@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Exclude Method Suite" verbose="1">
+    <test name = "Exclude Method Test">
+        <classes>
+            <class name="testCases.VerifySlide">
+                <methods>
+                    <include name="testCase1"/>
+                    <include name=""/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+</suite>
+
+<!--        <include name="testcase1"/>
+            <exclude name="testcase2"/>
+            chay testcase1 va khong chay testcase2
+
+              //<include name="testcase1"/>
+                <exclude name="testcase2"/>
+               chay tu testcase2 tro xuong
+-->
