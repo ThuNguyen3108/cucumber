@@ -91,7 +91,7 @@ public class SlidePage {
 
     public void button_CreatSlide() throws InterruptedException {
         waitForLoadingPage.verifyPageLoaded();
-        Thread.sleep(7000);
+        Thread.sleep(5000);
         Log.info("Wait For Loading Page Successful");
         buttonCreatSlide.click();
         Log.info("Click button create Slide Successful");
@@ -124,7 +124,7 @@ public class SlidePage {
 
 
     public void setAddItemButton() throws InterruptedException {
-        Thread.sleep(6000);
+        Thread.sleep(10000);
         addItemButton.click();
         Thread.sleep(10000);
         Log.info("Click button of successful item");

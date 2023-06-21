@@ -22,7 +22,7 @@ public class PageObjectManager {
 
 
     public SlidePage getSlidePage(){
-        return (slidePage == null)? slidePage = new SlidePage(): slidePage;
+        return (slidePage == null)? slidePage = new SlidePage(driver): slidePage;
     }
 
 }

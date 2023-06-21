@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import hooks.TestConText;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -16,21 +17,21 @@ public class SlideSteps {
     LoginPage loginPage;
     WebDriverSetup webDriverSetup;
     PageObjectManager pageObject;
-    WebDriver driver;
     private SlidePage slidePage;
-    //private BaseClass baseClass;
 
-//    public SlideSteps(BaseClass baseClass){
-//        this.baseClass = baseClass;
-//    }
+    private TestConText testContext;
+    private WebDriver driver;
+
+    public SlideSteps(TestConText context) {
+        testContext = context;
+        loginPage = testContext.getPageObjectManager().getLoginPage();
+        slidePage = testContext.getPageObjectManager().getSlidePage();
+       // driver = testContext.getwebDriverSetup().getDriver();
+    }
 
     @Given("user navigates to login page {string}")
     public void userNavigatesToLoginPage(String url) throws IOException {
-        webDriverSetup = new WebDriverSetup();
-        driver = webDriverSetup.getDriver();
-        pageObject = new PageObjectManager(driver);
-        loginPage = pageObject.getLoginPage();
-        slidePage = pageObject.getSlidePage();
+        loginPage.navigateToLoginPage();
 
 
     }
@@ -48,13 +49,12 @@ public class SlideSteps {
 
     @Then("user is redirected to slide page {string}")
     public void userIsRedirectedToSlidePage(String expectedUrl) {
-        String actualUrl = driver.getCurrentUrl();
-        assert actualUrl.equals(expectedUrl);
+        loginPage.verifyLoginSuccess();
     }
 
     @When("user clicks create slide button")
     public void userClicksCreateSlideButton() throws InterruptedException {
-        Thread.sleep(7000);
+        Thread.sleep(15000);
         slidePage.button_CreatSlide();
     }
 

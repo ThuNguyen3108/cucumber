@@ -23,6 +23,11 @@ public class LoginPage {
 
     private String expectedURL = "https://dstest.vibe.fyi/portal/slide-editor";
 
+    public void navigateToLoginPage() {
+        // Thực hiện điều hướng đến trang đăng nhập
+        driver.get("https://dstest.vibe.fyi");
+    }
+
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);

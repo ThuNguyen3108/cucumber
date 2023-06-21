@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 //        glue = "stepdefinitions",
 //        plugin = {"pretty", "html:target/cucumber-html-report.html"}
 //)
-@CucumberOptions(features = "src/test/resources/features/Login.feature",
+@CucumberOptions(features = "src/test/resources/features/Slide.feature",
         glue = {"stepDefinitions", "hooks"},
         plugin= {"pretty",
                 "html:target/cucumber-reports/TestRunnerCreateSlide.html",

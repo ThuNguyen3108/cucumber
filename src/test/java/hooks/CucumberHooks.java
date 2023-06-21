@@ -38,22 +38,22 @@ public class CucumberHooks {
         //BaseTest.closeDriver();
     }
 
-    @BeforeStep
-    public void beforeStep(Scenario scenario) {
-        Log.info("================ beforeStep ================");
-        Log.info(scenario.getName());
-        //Ghi file log4j
-        //Ghi log step vào report
-    }
-
-    @AfterStep
-    public void afterStep(Scenario scenario) {
-        Log.info("================ afterStep ================");
-        //validate if scenario has failed then Screenshot
-        if (scenario.isFailed()) {
-            //CaptureHelpers.takeScreenshot(scenario.getName());
-        }
-    }
+//    @BeforeStep
+//    public void beforeStep(Scenario scenario) {
+//        Log.info("================ beforeStep ================");
+//        Log.info(scenario.getName());
+//        //Ghi file log4j
+//        //Ghi log step vào report
+//    }
+//
+//    @AfterStep
+//    public void afterStep(Scenario scenario) {
+//        Log.info("================ afterStep ================");
+//        //validate if scenario has failed then Screenshot
+//        if (scenario.isFailed()) {
+//            //CaptureHelpers.takeScreenshot(scenario.getName());
+//        }
+//    }
     public static WebDriver getDriver() {
         return driver;
     }

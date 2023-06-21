@@ -33,41 +33,24 @@ public class TestConText {
         public PageObjectManager getPageObjectManager() {
             return pageObjectManager;
         }
-    }
-
-
-
-    //Anh Tester
-
-//    public TestConText() throws IOException {
-//        ThreadGuard.protect(new WebDriverSetup().setDriver());
-//        Log.info("Driver in TestContext: " + getDriver());
-//    }
-//
-//    public LoginPage getLoginPage() {
-//        if (loginPage == null) {
-//            loginPage = new LoginPage();
+//        public LoginPage getLoginPage() {
+//            if (loginPage == null) {
+//                loginPage = new LoginPage(driver);
+//            }
+//            return loginPage;
 //        }
-//        return loginPage;
-//    }
 //
 //    public SlidePage getSlidePage(){
-//        if(slidePage == null){
-//            slidePage = new SlidePage();
+//      if(slidePage == null){
+//            slidePage = new SlidePage(driver);
 //        }
 //     return slidePage;
 //    }
-//
-//    public WaitForLoadingPage getwaitForLoadingPage(){
-//        if(waitForLoadingPage == null){
-//            waitForLoadingPage = new WaitForLoadingPage();
-//        }
-//        return waitForLoadingPage;
-//    }
-//
-//    public WebDriver getDriver() throws IOException {
-//        return WebDriverSetup.getDriver();
-//    }
+}
+
+
+
+
 
 
 
