@@ -117,7 +117,8 @@ public class SlidePage {
         Log.info("Click button Create Slide Successful");
     }
 
-    public void verifyCreateSlide(){
+    public void verifyCreateSlide() throws InterruptedException{
+        Thread.sleep(10000);
         verifyCreateSlide.isDisplayed();
         Log.info("Verify Create Slide Successful");
     }

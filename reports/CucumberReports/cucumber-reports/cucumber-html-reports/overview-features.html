@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                10,
+                18,
                 2,
-                0,
+                32,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 12) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 52) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,7 +106,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                1,
+                0,
                 2
             ],
             backgroundColor: [
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 2) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -230,7 +230,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>CucumberVibe</td>
         <td>1</td>
-      <td>21 Jun 2023, 14:04</td>
+      <td>26 Jun 2023, 18:26</td>
     </tr>
   </tbody>
 </table>
@@ -325,20 +325,20 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
-        <td class="tagname"><a href="report-feature_1764534172.html">Login to Vibe</a></td>
+        <td class="tagname"><a href="report-feature_94318052.html">Create Slide</a></td>
 
-        <td      class="passed"    >10</td>
+        <td      class="passed"    >18</td>
         <td      class="failed"    >2</td>
+        <td     class="skipped"   >32</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td class="total">12</td>
+        <td class="total">52</td>
 
-        <td  class="passed"    >1</td>
+        <td >0</td>
         <td  class="failed"    >2</td>
-        <td class="total">3</td>
+        <td class="total">2</td>
 
-        <td class="duration" data-value="21475719600">21.475</td>
+        <td class="duration" data-value="121375497600">2:1.375</td>
         <td class="failed">Failed</td>
       </tr>
   </tbody>
@@ -346,30 +346,30 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>10</td>
+      <td>18</td>
       <td>2</td>
+      <td>32</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>12</td>
+      <td>52</td>
 
-      <td>1</td>
+      <td>0</td>
       <td>2</td>
-      <td>3</td>
+      <td>2</td>
 
-      <td class="duration">21.475</td>
+      <td class="duration">2:1.375</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
-      <td>83.33%</td>
-      <td>16.67%</td>
-      <td>0.00%</td>
+      <td>34.62%</td>
+      <td>3.85%</td>
+      <td>61.54%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>33.33%</td>
-      <td>66.67%</td>
+      <td>0.00%</td>
+      <td>100.00%</td>
       <td></td>
       <td></td>
       <td>0.00%</td>

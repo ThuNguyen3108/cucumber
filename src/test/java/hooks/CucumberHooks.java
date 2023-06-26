@@ -55,6 +55,7 @@ public class CucumberHooks {
 //        }
 //    }
     public static WebDriver getDriver() {
+
         return driver;
     }
 }

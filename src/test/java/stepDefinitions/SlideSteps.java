@@ -79,7 +79,7 @@ public class SlideSteps {
     }
 
     @Then("create slide is verified")
-    public void createSlideIsVerified() {
+    public void createSlideIsVerified() throws InterruptedException {
         slidePage.verifyCreateSlide();
     }
 
